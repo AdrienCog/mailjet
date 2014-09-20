@@ -11,7 +11,7 @@ class SubscriptionFormTest(TestCase):
     def list_name_and_label(self):
         ts = int(time.time())
 
-        result = ('Test%s' % ts, 'test%s' % ts)
+        result = (u'Test%s' % ts, u'test%s' % ts)
 
         self.temporary_lists.append(result)
 

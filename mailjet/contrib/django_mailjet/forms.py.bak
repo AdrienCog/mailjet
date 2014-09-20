@@ -27,7 +27,7 @@ class SubscriptionForm(forms.Form):
         for contact in contacts:
             if contact['email'] == self.cleaned_data['email']:
                 raise forms.ValidationError(
-                    _('This email is already subscribed'))
+                    _(u'This email is already subscribed'))
 
         return self.cleaned_data['email']
 

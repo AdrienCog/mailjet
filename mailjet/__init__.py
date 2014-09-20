@@ -1,4 +1,4 @@
-from api import Api
+from mailjet.api import Api
 
 __all__ = ['Api']
 

@@ -50,7 +50,7 @@ class ApiMethodFunction(object):
             postdata=postdata,
         )
 
-        if response.msg == 'No Content':
+        if response.msg == u'No Content':
             return None
 
         return json.load(response)

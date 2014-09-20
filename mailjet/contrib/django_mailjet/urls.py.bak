@@ -11,7 +11,7 @@ django_mailjet_subscription_success
 from django.conf.urls import patterns, url
 from django.views import generic
 
-from . import views
+import views
 
 urlpatterns = patterns(
     'newsletter.views',
